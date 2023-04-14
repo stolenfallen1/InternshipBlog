@@ -41,17 +41,3 @@
 }
 
 /* Collection Content */
-
-.collection-content {
-    padding: 0 150px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.images {
-    flex-grow: 1;
-    margin: 10px;
-    max-width: 300px;
-    max-height: auto;
-    object-fit: cover;
-}
