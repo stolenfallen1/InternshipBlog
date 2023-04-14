@@ -10,7 +10,7 @@ interface Nav {
 const Navbar = ({ isDarkMode, toggleTheme}: Nav) => {
     return (
         <div>
-            <nav className='nav-container'>
+            <nav className={`nav-container ${isDarkMode ? "dark-mode" : ""}`}>
                 <Switch
                     checked={isDarkMode}
                     onChange={toggleTheme}

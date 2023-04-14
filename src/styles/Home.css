@@ -27,3 +27,24 @@
     color: #fff;
     border: 1px solid #fff;
 }
+
+/* DARK MODE */
+
+.main-content.dark-mode {
+    background-color: #000;
+}
+
+.dark-mode .main-header {
+    color: #fff;
+}
+
+.dark-mode .home-button {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.dark-mode .home-button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
