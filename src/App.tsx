@@ -5,6 +5,7 @@ import './styles/Main.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Hero from './Views/Hero'
 import Home from './Views/Home'
+import Collections from './Views/Collections'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={ <Hero />}/>
           <Route path='/Home' element={ <Home/> }/>
+          <Route path='/Collections' element={ <Collections/> }/>
         </Routes>
       </BrowserRouter>
     </div>
