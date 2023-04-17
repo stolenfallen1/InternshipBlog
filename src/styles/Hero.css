@@ -1,7 +1,7 @@
 /* Hero Views */
 
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/hero/medium.jpg") no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35)), url("../assets/hero/medium.jpg") no-repeat center;
 }
 
 /* Hero Component */
