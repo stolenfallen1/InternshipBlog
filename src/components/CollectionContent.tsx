@@ -16,6 +16,7 @@ const CollectionContent = () => {
     {
       img: img1,
       title: "Image 1",
+
     },
     {
       img: img2,
@@ -59,7 +60,7 @@ const CollectionContent = () => {
     <div className="collection">
       {data.map((item, index) => (
         <div className="image-container" key={index}>
-          <img src={item.img} alt={item.title} className="images" />
+          <img src={item.img} className="images" />
         </div>
       ))}
     </div>
