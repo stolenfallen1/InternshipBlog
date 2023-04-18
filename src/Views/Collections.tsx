@@ -13,10 +13,10 @@ const Collections = () => {
 
     return (
         <>
-        <main className="view-collection">
-            <CollectionHeader/>
-            <CollectionContent/>
-        </main>
+            <main className="view-collection">
+                <CollectionHeader/>
+                <CollectionContent/>
+            </main>
         </>
     )
 }
