@@ -1,20 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, CSSProperties } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./styles/Main.css";
-import Splashscreen from "./Views/SplashScreen";
+import { ClimbingBoxLoader } from "react-spinners";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./Views/Hero";
 import Home from "./Views/Home";
 import Collections from "./Views/Collections";
 
+const override: CSSProperties = {
+  backgroundColor: "#000",
+  width: "100vw",
+  height: "100vh"
+}
+
 function App() {
-  const [showSplashscreen, setShowSplashscreen] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setShowSplashscreen(false);
-    }, 3000);
+      setLoading(false);
+    }, 2500);
 
     return () => {
       clearTimeout(timeoutId);
@@ -23,18 +29,19 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
-        {showSplashscreen && (
-          <div>
-            <Splashscreen />
-          </div>
-        )}
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Collections" element={<Collections />} />
-        </Routes>
-      </BrowserRouter>
+      {loading ? (
+        <div className="loader">
+          <ClimbingBoxLoader color="#fff" cssOverride={override} size={50}/>
+        </div>
+      ) : (
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Collections" element={<Collections />} />
+          </Routes>
+        </BrowserRouter>
+      )}
     </div>
   );
 }
