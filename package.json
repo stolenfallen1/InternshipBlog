@@ -2,6 +2,7 @@
   "name": "internshipblog",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://stolenfallen1.github.io/InternshipBlog",
   "type": "module",
   "scripts": {
     "dev": "vite",
