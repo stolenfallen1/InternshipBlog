@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 /* View Collection 
     Transition Effects
 */
@@ -97,7 +98,8 @@
 }
 
 .overlay-text {
-  font-size: 1.35rem;
+  font-size: 2rem;
+  font-family: "Sacramento", cursive;
 }
 
 /* 1080 screen size */
