@@ -74,6 +74,32 @@
   cursor: pointer;
 }
 
+.overlay {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.45s ease-in-out;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.overlay-text {
+  font-size: 1.35rem;
+}
+
 /* 1080 screen size */
 @media screen and (max-width: 1080px) {
   /* Collection Header */
@@ -131,7 +157,6 @@
 /* 445 */
 /* 500 screen size */
 @media screen and (max-width: 445px) {
-
   /* Collection Header */
   .collection-title {
     font-size: 3rem;
