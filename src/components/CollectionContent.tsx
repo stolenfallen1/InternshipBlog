@@ -14,7 +14,7 @@ const CollectionContent = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       const result = await axios.get(
-        "https://internship-blog-api.vercel.app/get"
+        "https://internshipblogapi.onrender.com/get"
       );
       setData(result.data);
     };
