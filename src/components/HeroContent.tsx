@@ -4,8 +4,11 @@ import { TypeAnimation } from "react-type-animation";
 const HeroContent = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center font-montserrat">
-      <h1 className="text-6xl text-white mb-6">INTERNSHIP JOURNEY</h1>
-      <p className="text-4xl italic text-white mb-6">
+      <h1 className="sm:text-3xl md:text-4xl lg:text-6xl text-white mb-6 font-bold tracking-tight">
+        INTERNSHIP JOURNEY
+      </h1>
+
+      <p className="sm:text-2xl md:text-3xl lg:text-4xl italic text-white mb-6">
         <TypeAnimation
           sequence={["Eat. Sleep. Code", 2500, "Live. Laugh. Love", 2500]}
           repeat={Infinity}
