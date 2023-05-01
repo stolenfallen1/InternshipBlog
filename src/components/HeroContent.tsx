@@ -7,7 +7,7 @@ const HeroContent = () => {
       <h1 className="text-white mb-6 font-bold tracking-tighter xl:text-6xl lg:text-5xl md:text-5xl sm:text-4xl custom-600:text-3xl custom-500:text-3xl">
         INTERNSHIP JOURNEY
       </h1>
-      <p className="text-white italic mb-6 xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl custom-600:text-2xl custom-500:text-2xl">
+      <p className="text-white italic font-light mb-6 xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl custom-600:text-2xl custom-500:text-2xl">
         <TypeAnimation
           sequence={["Eat. Sleep. Code", 2500, "Live. Laugh. Love", 2500]}
           repeat={Infinity}
