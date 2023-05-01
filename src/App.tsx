@@ -1,7 +1,6 @@
 import { useState, useEffect, CSSProperties } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./styles/Main.css";
 import { ClimbingBoxLoader } from "react-spinners";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./Views/Hero";
@@ -29,9 +28,9 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="p-0 m-0 box-border">
       {loading ? (
-        <div className="loader">
+        <div>
           <ClimbingBoxLoader color="#fff" cssOverride={override} size={50} />
         </div>
       ) : (
