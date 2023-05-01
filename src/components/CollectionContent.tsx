@@ -28,13 +28,13 @@ const CollectionContent = () => {
           <div className="relative overflow-hidden cursor-pointer">
             <img
               src={datas.image}
-              className="w-full h-auto rounded-md filter brightness-55"
+              className="w-full h-auto rounded-md filter brightness-75"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-450 ease-in-out bg-black bg-opacity-60 hover:opacity-100">
               <p className="text-white text-3xl font-bold mb-2">
                 {datas.title}
               </p>
-              <p className="text-white text-3xl font-script">Learn More</p>
+              <p className="text-white text-4xl font-sacramento">Learn More</p>
             </div>
           </div>
         </Link>

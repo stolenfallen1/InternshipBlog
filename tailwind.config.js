@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat"],
+        sacramento: ["Sacramento"],
       },
       screens: {
         sm: "640px",
