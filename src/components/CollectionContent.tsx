@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/Collection.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 interface Type {
   id: string;
@@ -24,13 +25,15 @@ const CollectionContent = () => {
   return (
     <div className="collection">
       {data.map((datas) => (
-        <div className="image-container" key={datas.id}>
-          <img src={datas.image} className="images" />
-          <div className="overlay">
-            <p className="overlay-title">{datas.title}</p>
-            <p className="overlay-text">Learn More</p>
+        <Link to={`/Collections/${datas.id}`} key={datas.id}>
+          <div className="image-container" key={datas.id}>
+            <img src={datas.image} className="images" />
+            <div className="overlay">
+              <p className="overlay-title">{datas.title}</p>
+              <p className="overlay-text">Learn More</p>
+            </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
