@@ -9,7 +9,7 @@ const HeroContent = () => {
       </h1>
       <p className="text-white italic font-light mb-6 xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl custom-600:text-2xl custom-500:text-2xl">
         <TypeAnimation
-          sequence={["Eat. Sleep. Code", 2500, "Live. Laugh. Love", 2500]}
+          sequence={["Eat. Sleep. Code", 1500, "Live. Laugh. Love", 3000]}
           repeat={Infinity}
         />
       </p>
