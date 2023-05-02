@@ -24,12 +24,24 @@ const CollectionDetails = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center xl:flex-row">
       {data && (
         <>
-          <h2>{data.title}</h2>
-          <img src={data.image} alt={data.title} />
-          <p>{data.content}</p>
+          <div>
+            <img
+              src={data.image}
+              alt={data.title}
+              className="px-5 object-cover max-w-lg h-auto mb-4 pt-8 custom-600:max-w-md custom-500:max-w-sm custom-500:px-3"
+            />
+          </div>
+          <div>
+            <h2 className="text-4xl xl:text-5xl lg:text-5xl font-bold mb-5 tracking-tighter text-center">
+              {data.title}
+            </h2>
+            <p className="text-lg max-w-4xl leading-relaxed text-justify px-5 lg:px-10">
+              {data.content}
+            </p>
+          </div>
         </>
       )}
     </div>
