@@ -32,7 +32,7 @@ const CollectionDetails = () => {
 
   return (
     <div
-      className={`flex flex-col items-center justify-center xl:flex-row ${
+      className={`flex flex-col items-center justify-center xl:flex-row xl:h-screen ${
         isDarkMode ? "dark-mode" : ""
       }`}
     >
@@ -52,7 +52,7 @@ const CollectionDetails = () => {
             <p className="text-lg max-w-4xl leading-relaxed text-justify px-5 lg:px-10">
               {data.content}
             </p>
-            <div className="flex items-center justify-center pt-5">
+            <div className="flex items-center justify-center pt-5 pb-6">
               <Switch
                 checked={isDarkMode}
                 onChange={toggleTheme}
