@@ -32,7 +32,7 @@ const CollectionDetails = () => {
 
   return (
     <div
-      className={`flex flex-col items-center justify-center xl:flex-row h-screen ${
+      className={`flex flex-col items-center justify-center xl:flex-row ${
         isDarkMode ? "dark-mode" : ""
       }`}
     >
