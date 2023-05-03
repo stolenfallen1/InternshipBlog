@@ -61,7 +61,7 @@ const CollectionDetails = () => {
               />
               <Link
                 to="/Collections"
-                className="ml-4 px-4 py-2 bg-gray-500 text-white rounded"
+                className="ml-4 px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700"
               >
                 Back to Collections
               </Link>
