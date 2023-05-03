@@ -31,7 +31,7 @@ const CollectionContent = () => {
               className="w-full h-auto rounded-md filter brightness-75"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 transition-opacity duration-450 ease-in-out bg-black bg-opacity-60 hover:opacity-100">
-              <p className="text-white text-3xl font-bold mb-2">
+              <p className="text-white text-3xl font-bold mb-2 text-center">
                 {datas.title}
               </p>
               <p className="text-white text-4xl font-sacramento">Learn More</p>
